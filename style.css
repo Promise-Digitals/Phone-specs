@@ -2,20 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: cursive;
+    font-family: sans-serif;
     overflow: hidden;
     cursor: default;
 }
 .hero{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to right, #9c27b0, #8ecdff);
+    background: linear-gradient(to right, #9c27b0, #8ea7ff);
     position: relative;
 }
 nav{
     width: 100%;
     position: absolute;
-    top: -50px;
+    top: 20px;
     left: 0;
     display: flex;
     justify-content: space-between;
@@ -23,11 +23,11 @@ nav{
     z-index: 100;
 }
 nav img{
-    width: 170px;
+    width: 140px;
     margin-left: 10%;
 }
 nav ul{
-    margin-right: 5%;
+    margin-right: 10%;
 }
 nav ul li{
     display: inline;
@@ -40,6 +40,8 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
     transition: 0.5s;
+    font-weight: 600;
+    font-size: 15px;
 }
 nav ul li:hover a{
     color: #9c27b0;
@@ -67,7 +69,7 @@ nav ul li:hover a{
     align-items: center;
 }
 .feature img{
-    width: 70px;
+    width: 65px;
 }
 .one{
     top: 450px;
@@ -95,16 +97,16 @@ nav ul li:hover a{
     margin-top: 5px;
 }
 .feature-img{
-    width: 200px;
+    width: 550px;
     position: absolute;
-    left: 35%;
+    left: 25%;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
 }
 .controls{
     position: absolute;
-    right: 5%;
+    right: 13%;
     top: 50%;
     transform: translateY(-50%);
     color: #fff;
@@ -121,7 +123,7 @@ nav ul li:hover a{
     transform: rotate(180deg);
 }
 .controls h3{
-    margin: 10px 0;
+    margin: 15px 0;
 }
 .cover{
     position: absolute;
@@ -133,30 +135,4 @@ nav ul li:hover a{
     border-right: 500px solid transparent;
     z-index: 1;
 }
-.brand{
-    z-index: 2;
-    position: absolute;
-    bottom: 15px;
-    left: 2%;
-    font-size: 18px;
-    font-weight: 700;
-}
-.brand p{
-    position: relative;
-    color: #9c27b0;
-}
-.brand p::after{
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-left: 2px solid #fff;
-    left: 0;
-    background: #fff;
-    animation: slide 1.5s steps(15) infinite;
-}
-@keyframes slide{
-    100%{
-        left: calc(100% + 15px);
-    }
-}
+
